@@ -15,71 +15,55 @@ public class Main {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(backgroundPanel);
 
-
-        HorizontalFull[][] hf= new HorizontalFull[6][5];
-
-        for (int i = 0; i < 6; i++) {
-            for (int j = 0; j < 5; j++) {
-                hf[i][j] = new HorizontalFull();
-                hf[i][j].setButtonProperties(50 * j + 155, 50 * i + 50, 50, 50);
-            }
-        }
+        ObjSpecifics hFullSpec= new ObjSpecifics("grafix/line_full.png",50, 20, 50);
+        GridSpecifics hfGridSpec=new GridSpecifics(6,5,50, 50, 155, 50 , 50);
+        GraphicObj[][] horizontalFull=new GraphicObj[hfGridSpec.rows][hfGridSpec.cols];
+        SetGrid.setGrid(horizontalFull,hFullSpec,hfGridSpec,backgroundPanel,false);
 
 
-        VerticalFull[][] vf = new VerticalFull[5][6];
-        //SetGrid.setGrid(vf,5,6,50,50,130,75,50);
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 6; j++) {
-                vf[i][j] = new VerticalFull();
-                vf[i][j].setButtonProperties(50 * j + 130, 50 * i + 75, 50, 50);
-            }
-        }
+        ObjSpecifics vFullSpec= new ObjSpecifics("grafix/line_full_vertical.png",20, 50, 50);
+        GridSpecifics vfGridSpec=new GridSpecifics(5,6,50, 50, 130, 75 , 50);
+        GraphicObj[][] verticalFull=new GraphicObj[vfGridSpec.rows][vfGridSpec.cols];
+        SetGrid.setGrid(verticalFull,vFullSpec,vfGridSpec,backgroundPanel,false);
 
-        backgroundPanel.add(hf[1][1].getLine());
-        backgroundPanel.add(hf[2][1].getLine());
-        backgroundPanel.add(vf[1][1].getLine());
-        backgroundPanel.add(vf[1][2].getLine());
 
-        Box box = new Box();
+
+
+        backgroundPanel.add(horizontalFull[1][1].getLine());
+        backgroundPanel.add(horizontalFull[2][1].getLine());
+        backgroundPanel.add(verticalFull[1][1].getLine());
+        backgroundPanel.add(verticalFull[1][2].getLine());
+
+
+
+        ObjSpecifics boxSpec= new ObjSpecifics("grafix/box.png",40, 40, 40);
+        GraphicObj box = new GraphicObj(boxSpec);
         box.setButtonProperties(180, 100, 100, 100);
         backgroundPanel.add(box.getLine());
 
 
-        Dot[][] dots = new Dot[6][6];
-        for (int i = 0; i < 6; i++) {
-            for (int j = 0; j < 6; j++) {
-                dots[i][j] = new Dot();
-                dots[i][j].setButtonProperties(50 * j + 130, 50 * i + 50, 50, 50);
-                backgroundPanel.add(dots[i][j].getLine());
-            }
-        }
+        ObjSpecifics dotSpec= new ObjSpecifics("grafix/dot.png",10, 10, 50);
+        GridSpecifics dotGridSpec=new GridSpecifics(6,6,50, 50, 130, 50 , 50);
+        GraphicObj[][] dots=new GraphicObj[dotGridSpec.rows][dotGridSpec.cols];
+        SetGrid.setGrid(dots,dotSpec,dotGridSpec,backgroundPanel,true);
 
 
 
-
-        HorizontalEmpty[][] he = new HorizontalEmpty[6][5];
-        for (int i = 0; i < 6; i++) {
-            for (int j = 0; j < 5; j++) {
-                he[i][j] = new HorizontalEmpty();
-                he[i][j].setButtonProperties(50 * j + 155, 50 * i + 50, 50, 50);
-                backgroundPanel.add(he[i][j].getLine());
-            }
-        }
+        ObjSpecifics hEmptySpec= new ObjSpecifics("grafix/line_empty.png",50, 20, 50);
+        GridSpecifics heGridSpec=new GridSpecifics(6,5,50, 50, 155, 50 , 50);
+        GraphicObj[][] horizontalEmpty=new GraphicObj[heGridSpec.rows][heGridSpec.cols];
+        SetGrid.setGrid(horizontalEmpty,hEmptySpec,heGridSpec,backgroundPanel,true);
 
 
+        ObjSpecifics vEmptySpec= new ObjSpecifics("grafix/line_empty_vertical.png",20, 50, 50);
+        GridSpecifics veGridSpec=new GridSpecifics(5,6,50, 50, 130, 75 , 50);
+        GraphicObj[][] verticalEmpty=new GraphicObj[veGridSpec.rows][veGridSpec.cols];
+        SetGrid.setGrid(verticalEmpty,vEmptySpec,veGridSpec,backgroundPanel,true);
 
-        VerticalEmpty[][] ve = new VerticalEmpty[5][6];
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 6; j++) {
-                ve[i][j] = new VerticalEmpty();
-                ve[i][j].setButtonProperties(50 * j + 130, 50 * i + 75, 50, 50);
-                backgroundPanel.add(ve[i][j].getLine());
-            }
-        }
+
 
 
         frame.setVisible(true);
-
 
     }
 };

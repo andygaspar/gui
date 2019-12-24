@@ -2,12 +2,13 @@ import java.util.function.Supplier;
 
 public class SetGrid {
 
-    public static void setGrid(GraphicObj[][] graphicObj, Integer rows, Integer cols, Integer width, Integer height, Integer xOffset, Integer yOffset, Integer dist){
+    public static void setGrid(GraphicObj[][] graphicObj, ObjSpecifics objSpec, GridSpecifics gridSpec,BackgroundPanel bPanel, Boolean drowElem){
 
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                graphicObj[i][j] = new GraphicObj();
-                graphicObj[i][j].setButtonProperties(dist * j + xOffset, dist * i + yOffset, width, height);
+        for (int i = 0; i < gridSpec.rows; i++) {
+            for (int j = 0; j < gridSpec.cols; j++) {
+                graphicObj[i][j] = new GraphicObj(objSpec);
+                graphicObj[i][j].setButtonProperties(gridSpec.dist * j + gridSpec.xOffset, gridSpec.dist * i + gridSpec.yOffset, gridSpec.width, gridSpec.height);
+                if (drowElem==true) bPanel.add(graphicObj[i][j].getLine());
             }
         }
 
