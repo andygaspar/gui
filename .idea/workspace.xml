@@ -20,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="attept" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,6 +53,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
@@ -122,8 +123,8 @@
     <state width="660" height="175" key="GridCell.Tab.0.center" timestamp="1577201567823">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
-    <state width="660" height="175" key="GridCell.Tab.0.center/0.0.1366.740@0.0.1366.740" timestamp="1577201567823" />
-    <state width="660" height="175" key="GridCell.Tab.0.left" timestamp="1577201567822">
+    <state width="1320" height="175" key="GridCell.Tab.0.left/0.0.1366.740@0.0.1366.740" timestamp="1577138980258" />
+    <state width="1320" height="175" key="GridCell.Tab.0.right" timestamp="1577138980259">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
     <state width="660" height="175" key="GridCell.Tab.0.left/0.0.1366.740@0.0.1366.740" timestamp="1577201567822" />
