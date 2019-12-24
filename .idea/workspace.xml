@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bab681d-80f9-4ac6-a398-c715d2fdca08" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Environment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,12 +99,28 @@
       <option name="project" value="LOCAL" />
       <updated>1577201451129</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="-pre merge">
+      <created>1577201941983</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577201941983</updated>
+    </task>
+    <task id="LOCAL-00004" summary="-pre merge da attempt">
+      <created>1577201981122</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577201981122</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="-cleaned GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="-cleaned GUI" />
+    <MESSAGE value="-pre merge" />
+    <MESSAGE value="-pre merge da attempt" />
+    <option name="LAST_COMMIT_MESSAGE" value="-pre merge da attempt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="278" y="32" width="802" height="676" key="#Java" timestamp="1577201524699">
@@ -112,30 +131,30 @@
       <screen x="0" y="0" width="1366" height="740" />
     </state>
     <state x="416" y="119" width="526" height="501" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.740@0.0.1366.740" timestamp="1577120206914" />
-    <state x="289" y="0" width="779" height="739" key="CommitChangelistDialog2" timestamp="1577201400294">
+    <state x="289" y="0" width="779" height="739" key="CommitChangelistDialog2" timestamp="1577201980832">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
-    <state x="289" y="0" width="779" height="739" key="CommitChangelistDialog2/0.0.1366.740@0.0.1366.740" timestamp="1577201400294" />
-    <state width="660" height="175" key="GridCell.Tab.0.bottom" timestamp="1577201567824">
+    <state x="289" y="0" width="779" height="739" key="CommitChangelistDialog2/0.0.1366.740@0.0.1366.740" timestamp="1577201980832" />
+    <state width="1320" height="175" key="GridCell.Tab.0.bottom" timestamp="1577202658159">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
-    <state width="660" height="175" key="GridCell.Tab.0.bottom/0.0.1366.740@0.0.1366.740" timestamp="1577201567824" />
-    <state width="660" height="175" key="GridCell.Tab.0.center" timestamp="1577201567823">
+    <state width="1320" height="175" key="GridCell.Tab.0.bottom/0.0.1366.740@0.0.1366.740" timestamp="1577202658159" />
+    <state width="1320" height="175" key="GridCell.Tab.0.center" timestamp="1577202658158">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
-    <state width="1320" height="175" key="GridCell.Tab.0.left/0.0.1366.740@0.0.1366.740" timestamp="1577138980258" />
-    <state width="1320" height="175" key="GridCell.Tab.0.right" timestamp="1577138980259">
+    <state width="1320" height="175" key="GridCell.Tab.0.center/0.0.1366.740@0.0.1366.740" timestamp="1577202658158" />
+    <state width="1320" height="175" key="GridCell.Tab.0.left" timestamp="1577202658157">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
-    <state width="660" height="175" key="GridCell.Tab.0.left/0.0.1366.740@0.0.1366.740" timestamp="1577201567822" />
-    <state width="660" height="175" key="GridCell.Tab.0.right" timestamp="1577201567823">
+    <state width="1320" height="175" key="GridCell.Tab.0.left/0.0.1366.740@0.0.1366.740" timestamp="1577202658157" />
+    <state width="1320" height="175" key="GridCell.Tab.0.right" timestamp="1577202658158">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
-    <state width="660" height="175" key="GridCell.Tab.0.right/0.0.1366.740@0.0.1366.740" timestamp="1577201567823" />
-    <state x="339" y="198" key="com.intellij.ide.util.TipDialog" timestamp="1577201794994">
+    <state width="1320" height="175" key="GridCell.Tab.0.right/0.0.1366.740@0.0.1366.740" timestamp="1577202658158" />
+    <state x="339" y="198" key="com.intellij.ide.util.TipDialog" timestamp="1577202044221">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
-    <state x="339" y="198" key="com.intellij.ide.util.TipDialog/0.0.1366.740@0.0.1366.740" timestamp="1577201794994" />
+    <state x="339" y="198" key="com.intellij.ide.util.TipDialog/0.0.1366.740@0.0.1366.740" timestamp="1577202044221" />
     <state x="409" y="84" width="539" height="571" key="git4idea.branch.GitSmartOperationDialog" timestamp="1577201388016">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
