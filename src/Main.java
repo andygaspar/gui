@@ -24,7 +24,7 @@ public class Main {
 
         ObjSpecifics boxSpec= new ObjSpecifics("grafix/box.png","",40, 40, 40);
         GraphicObj box = new GraphicObj(boxSpec,false);
-        box.setButtonProperties(180, 100, 100, 100);
+        box.setButtonProperties(210, 130, 40, 40);
         backgroundPanel.add(box.getLine());
 
 
