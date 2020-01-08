@@ -1,0 +1,9 @@
+public class Box {
+    public static void setBox(int i, int j,BackgroundPanel backgroundPanel){
+
+        ObjSpecifics boxSpec= new ObjSpecifics("grafix/box.png","",40, 40, 40);
+        GraphicObj box = new GraphicObj(boxSpec,false);
+        box.setButtonProperties(160 +i*50, 80+j*50, 40, 40);
+        backgroundPanel.add(box.getLine());
+    }
+}

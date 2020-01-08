@@ -7,7 +7,6 @@ public class Environment {
 
 
         ObjSpecifics hEmptySpec= new ObjSpecifics("grafix/line_empty.png","grafix/line_full.png",50, 20, 50);
-        //GridSpecifics heGridSpec=new GridSpecifics(6,5,50, 50, 155, 50 , 50);
         GridSpecifics heGridSpec=new GridSpecifics(6,5,50, 15, 155, 68 , 50);
         GraphicObj[][] horizontalEmpty=new GraphicObj[heGridSpec.rows][heGridSpec.cols];
         SetGrid.setGrid(horizontalEmpty,hEmptySpec,heGridSpec,backgroundPanel,true);

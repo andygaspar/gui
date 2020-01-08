@@ -23,7 +23,6 @@ public class GraphicObj extends JFrame implements ActionListener{
     }
 
     public JButton getLine(){return graphicObj;}
-    //public void setButtonProperties(int x, int y, int w, int h){this.graphicObj.setBounds(x,y,w,h);}
     public void setButtonProperties(int x, int y, int w, int h){this.graphicObj.setBounds(x,y,w,h);}
 
 

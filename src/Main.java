@@ -18,15 +18,8 @@ public class Main {
         frame.add(backgroundPanel);
 
 
-
-
-
-
-        ObjSpecifics boxSpec= new ObjSpecifics("grafix/box.png","",40, 40, 40);
-        GraphicObj box = new GraphicObj(boxSpec,false);
-        box.setButtonProperties(210, 130, 40, 40);
-        backgroundPanel.add(box.getLine());
-
+        Box.setBox(2,2,backgroundPanel);
+        Box.setBox(0,0,backgroundPanel);
 
         Environment.setBackgroundElements(backgroundPanel);
 
@@ -39,16 +32,3 @@ public class Main {
 };
 
 
-/*
-
-class Action implements ActionListener {
-
-    @Override
-    public void actionPerformed(ActionEvent e)
-    {
-        System.out.println("Mani");
-    }
-}
-
-
-*/
