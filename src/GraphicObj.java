@@ -2,12 +2,12 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class GraphicObj extends JFrame implements ActionListener{
+public class GraphicObj extends JFrame {
     protected JButton graphicObj;
     protected ObjSpecifics objSpec;
 
 
-    public GraphicObj(ObjSpecifics os, Boolean isLine) {
+    public GraphicObj(ObjSpecifics os) {
         objSpec=os;
         graphicObj = new JButton();
         graphicObj.setBorder(null);
@@ -17,15 +17,31 @@ public class GraphicObj extends JFrame implements ActionListener{
         graphicObj.setFocusPainted(false);
         ImageIcon imageIcon = new ImageIcon(new ImageIcon(objSpec.fileName).getImage().getScaledInstance(objSpec.width, objSpec.height, objSpec.hints));
         graphicObj.setIcon(imageIcon);
-        if (isLine == true)
-            graphicObj.addActionListener(this);
+
 
     }
 
-    public JButton getLine(){return graphicObj;}
+    public JButton getButton(){return graphicObj;}
     public void setButtonProperties(int x, int y, int w, int h){this.graphicObj.setBounds(x,y,w,h);}
 
 
+
+}
+
+
+
+
+class Line extends GraphicObj implements ActionListener{
+
+    Integer row;
+    Integer column;
+
+    public Line(ObjSpecifics os, Integer r, Integer c) {
+        super(os);
+        row=r;
+        column=c;
+        graphicObj.addActionListener(this);
+    }
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == graphicObj)
         {
@@ -36,7 +52,6 @@ public class GraphicObj extends JFrame implements ActionListener{
         }
     }
 }
-
 
 
 

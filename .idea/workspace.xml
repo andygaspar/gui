@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bab681d-80f9-4ac6-a398-c715d2fdca08" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Box.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/test/GraphicObj.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/test/GraphicObj.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/test/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/test/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/SetGrid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Box.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Environment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GraphicObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphicObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SetGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SetElements.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578504612942</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="aggiunta funzione setBox">
+      <created>1578505672592</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1578505672592</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -156,7 +164,8 @@
     <MESSAGE value="pre change" />
     <MESSAGE value="refactor fatto e aggiunta azione colora linee. &#10;alcune non funzionano ancora bene.&#10;-vedere sovrapposizione bottoni" />
     <MESSAGE value="funzionante" />
-    <option name="LAST_COMMIT_MESSAGE" value="funzionante" />
+    <MESSAGE value="aggiunta funzione setBox" />
+    <option name="LAST_COMMIT_MESSAGE" value="aggiunta funzione setBox" />
   </component>
   <component name="WindowStateProjectService">
     <state x="278" y="32" width="802" height="676" key="#Java" timestamp="1577201524699">
@@ -175,30 +184,30 @@
       <screen x="0" y="0" width="1366" height="740" />
     </state>
     <state x="416" y="119" width="526" height="501" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.740@0.0.1366.740" timestamp="1577120206914" />
-    <state x="289" y="0" width="779" height="739" key="CommitChangelistDialog2" timestamp="1578504612627">
+    <state x="289" y="0" width="779" height="739" key="CommitChangelistDialog2" timestamp="1578515743545">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
-    <state x="289" y="0" width="779" height="739" key="CommitChangelistDialog2/0.0.1366.740@0.0.1366.740" timestamp="1578504612627" />
-    <state width="1320" height="175" key="GridCell.Tab.0.bottom" timestamp="1578505649051">
+    <state x="289" y="0" width="779" height="739" key="CommitChangelistDialog2/0.0.1366.740@0.0.1366.740" timestamp="1578515743545" />
+    <state width="1320" height="175" key="GridCell.Tab.0.bottom" timestamp="1578513462875">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
-    <state width="1320" height="175" key="GridCell.Tab.0.bottom/0.0.1366.740@0.0.1366.740" timestamp="1578505649051" />
-    <state width="1320" height="175" key="GridCell.Tab.0.center" timestamp="1578505649050">
+    <state width="1320" height="175" key="GridCell.Tab.0.bottom/0.0.1366.740@0.0.1366.740" timestamp="1578513462875" />
+    <state width="1320" height="175" key="GridCell.Tab.0.center" timestamp="1578513462874">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
-    <state width="1320" height="175" key="GridCell.Tab.0.center/0.0.1366.740@0.0.1366.740" timestamp="1578505649050" />
-    <state width="1320" height="175" key="GridCell.Tab.0.left" timestamp="1578505649050">
+    <state width="1320" height="175" key="GridCell.Tab.0.center/0.0.1366.740@0.0.1366.740" timestamp="1578513462874" />
+    <state width="1320" height="175" key="GridCell.Tab.0.left" timestamp="1578513462873">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
-    <state width="1320" height="175" key="GridCell.Tab.0.left/0.0.1366.740@0.0.1366.740" timestamp="1578505649050" />
-    <state width="1320" height="175" key="GridCell.Tab.0.right" timestamp="1578505649050">
+    <state width="1320" height="175" key="GridCell.Tab.0.left/0.0.1366.740@0.0.1366.740" timestamp="1578513462873" />
+    <state width="1320" height="175" key="GridCell.Tab.0.right" timestamp="1578513462874">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
-    <state width="1320" height="175" key="GridCell.Tab.0.right/0.0.1366.740@0.0.1366.740" timestamp="1578505649050" />
-    <state x="278" y="106" width="802" height="527" key="Vcs.Push.Dialog.v2" timestamp="1578504616758">
+    <state width="1320" height="175" key="GridCell.Tab.0.right/0.0.1366.740@0.0.1366.740" timestamp="1578513462874" />
+    <state x="278" y="106" width="802" height="527" key="Vcs.Push.Dialog.v2" timestamp="1578505679717">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
-    <state x="278" y="106" width="802" height="527" key="Vcs.Push.Dialog.v2/0.0.1366.740@0.0.1366.740" timestamp="1578504616758" />
+    <state x="278" y="106" width="802" height="527" key="Vcs.Push.Dialog.v2/0.0.1366.740@0.0.1366.740" timestamp="1578505679717" />
     <state x="339" y="198" key="com.intellij.ide.util.TipDialog" timestamp="1578498417777">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
