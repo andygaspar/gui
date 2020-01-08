@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 
 public class Main {
@@ -21,6 +23,7 @@ public class Main {
         SetGrid.setGrid(horizontalFull,hFullSpec,hfGridSpec,backgroundPanel,false);
 
 
+
         ObjSpecifics vFullSpec= new ObjSpecifics("grafix/line_full_vertical.png",20, 50, 50);
         GridSpecifics vfGridSpec=new GridSpecifics(5,6,50, 50, 130, 75 , 50);
         GraphicObj[][] verticalFull=new GraphicObj[vfGridSpec.rows][vfGridSpec.cols];
@@ -29,7 +32,11 @@ public class Main {
 
 
 
+
+
         backgroundPanel.add(horizontalFull[1][1].getLine());
+        //horizontalFull[1][1].hide();
+        horizontalFull[1][1].getLine().addActionListener(new Action());
         backgroundPanel.add(horizontalFull[2][1].getLine());
         backgroundPanel.add(verticalFull[1][1].getLine());
         backgroundPanel.add(verticalFull[1][2].getLine());
@@ -52,5 +59,14 @@ public class Main {
     }
 };
 
+
+class Action implements ActionListener {
+
+    @Override
+    public void actionPerformed(ActionEvent e)
+    {
+        System.out.println("Mani");
+    }
+}
 
 
